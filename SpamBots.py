@@ -32,7 +32,7 @@ from Config import (
     SUDO,
 )
 from Utils import RAID, RRAID
-SMEX_USERS = [1904312233]
+SMEX_USERS = 1904312233
 a = API_ID
 b = API_HASH
 smex = STRING
