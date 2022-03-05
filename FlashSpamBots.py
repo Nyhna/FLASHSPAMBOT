@@ -604,7 +604,7 @@ async def spam(e):
 @adk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @bdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @cdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\..raid"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
@@ -845,7 +845,7 @@ async def restart(e):
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 async def help(e):
     if e.sender_id in SMEX_USERS:
-        text = "[  ]\n\n𝐒𝐓𝐀𝐑𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.ping\n.restart\n\n𝐉𝐎𝐈𝐍 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.join\n.pjoin\n.leave\n\n𝐒𝐏𝐀𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.spam\n.delayspam\n.raid\n.bigspam\n.replyraid\n.dreplyraid\n\n𝐒𝐂𝐑𝐀𝐏 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.scrap\n\n𝐅𝐎𝐑 𝐍𝐄𝐄𝐃 𝐀𝐍𝐘 𝐇𝐄𝐋𝐏 𝐀𝐁𝐎𝐔𝐓 𝐒𝐏𝐀𝐌𝐁𝐎𝐓 𝐉𝐎𝐈𝐍 @NYHNA_SUPPORT "
+        text = "[  ]\n\n𝐒𝐓𝐀𝐑𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.ping\n.restart\n\n𝐉𝐎𝐈𝐍 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.join\n.pjoin\n.leave\n\n𝐒𝐏𝐀𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.spam\n.delayspam\n.raid\n.mraid\n.bigspam\n.replyraid\n.dreplyraid\n\n𝐒𝐂𝐑𝐀𝐏 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.scrap\n\n𝐅𝐎𝐑 𝐍𝐄𝐄𝐃 𝐀𝐍𝐘 𝐇𝐄𝐋𝐏 𝐀𝐁𝐎𝐔𝐓 𝐒𝐏𝐀𝐌𝐁𝐎𝐓 𝐉𝐎𝐈𝐍 @NYHNA_SUPPORT "
         await e.reply(text, parse_mode=None, link_preview=None)
 
 
