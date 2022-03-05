@@ -1,6 +1,6 @@
 # `•.¸¸.•´´¯`••._.•   🎀  𝐹𝐿𝒜𝒮𝐻 𝒮𝒫𝒜𝑀 𝐵❁𝒯  🎀   •._.••`¯´´•.¸¸.•`
 <p align="center"> 
-  <img src="https://te.legra.ph/file/1d932f84b543e5ad6d13f.jpg"> 
+  <img src="https://telegra.ph/file/1baea99a3404b5f7d2bd3.jpg"> 
 </p> 
 
 
@@ -17,8 +17,8 @@
 
 ## 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 
 
-<a href="https://t.me/Deadly_spam_bot"><img src="https://img.shields.io/badge/Join-SUPPORT%20GROUP-red.svg?logo=Telegram"></a> 
-<a href="https://t.me/Deadly_spambot"><img src="https://img.shields.io/badge/Join-SUPPORT%20CHANNEL-red.svg?logo=Telegram"></a> 
+<a href="https://t.me/NYHNA_SUPPORT"><img src="https://img.shields.io/badge/Join-SUPPORT%20GROUP-red.svg?logo=Telegram"></a> 
+<a href="https://t.me/NYHNA_SUPPORT"><img src="https://img.shields.io/badge/Join-SUPPORT%20CHANNEL-red.svg?logo=Telegram"></a> 
 
 ------------------------------------------------- 
 
