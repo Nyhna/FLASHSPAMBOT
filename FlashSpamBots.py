@@ -373,8 +373,44 @@ async def _(e):
 @cdk.on(events.NewMessage(incoming=True, pattern=r"\.mraid"))
 @edk.on(events.NewMessage(incoming=True, pattern=r"\.mraid"))
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.mraid"))
-
-
+async def _(e):
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗠𝗥𝗮𝗶𝗱\n\nCommand:\n\n.mraid <count> <Username of User>\n\n.mraid <count> <reply to a User>\n\nCount must be a integer."
+    if e.sender_id in SMEX_USERS:
+        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
+            return await e.reply(usage, parse_mode=None, link_preview=None)
+        Ustad = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        await e.get_reply_message()
+        if len(Ustad) == 2:
+            message = str(Ustad[1])
+            print(message)
+            a = await e.client.get_entity(message)
+            g = a.id
+            c = a.first_name
+            username = f"[{c}](tg://user?id={g})"
+            counter = int(Ustad[0])
+            for _ in range(counter):
+                reply = random.choice(MRAID)
+                caption = f"{username} {reply}"
+                async with e.client.action(e.chat_id, "typing"):
+                    await e.client.send_message(e.chat_id, caption)
+                    await asyncio.sleep(0.3)
+        elif e.reply_to_msg_id:
+            a = await e.get_reply_message()
+            b = await e.client.get_entity(a.sender_id)
+            g = b.id
+            c = b.first_name
+            counter = int(Ustad[0])
+            username = f"[{c}](tg://user?id={g})"
+            for _ in range(counter):
+                reply = random.choice(MRAID)
+                caption = f"{username} {reply}"
+                async with e.client.action(e.chat_id, "typing"):
+                    await e.client.send_message(e.chat_id, caption)
+                    await asyncio.sleep(0.3)
+        else:
+            await e.reply(usage, parse_mode=None, link_preview=None)
+            
+            
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
@@ -564,7 +600,7 @@ async def spam(e):
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))  
 @adk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @bdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @cdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
