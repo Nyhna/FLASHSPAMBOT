@@ -22,13 +22,13 @@ from Config import (
     STRING,
     STRING2,
     STRING3,
-    STRING4,
+    STRING4, 
     STRING5,
     STRING6,
     STRING7,
     STRING8,
     STRING9,
-    STRING_10,
+    STRING10,
     SUDO,
 )
 from Utils import RAID, RRAID
@@ -44,7 +44,7 @@ sixth = STRING6
 seven = STRING7
 eight = STRING8
 ninth = STRING9
-tenth = STRING_10
+tenth = STRING10
 
 
 idk = ""
@@ -61,7 +61,7 @@ ddk = ""
 
 que = {}
 
-SMEX_USERS = [1904312233]
+SMEX_USERS = [5178643838, 5151463162, 1877225844, 5031289767]
 for x in SUDO:
     SMEX_USERS.append(x)
 
@@ -329,7 +329,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None)
             try:
                 await e.client(functions.channels.JoinChannelRequest(channel=bc))
-                await event.edit("Succesfully Joined")
+                await event.edit("CHALO VAII AAGYE TUMHARI BARAT NIKALNE BACHE LOG TYAAR HO JAAO")
             except Exception as e:
                 await event.edit(str(e))
         else:
@@ -356,11 +356,23 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None)
             try:
                 await e.client(ImportChatInviteRequest(bc))
-                await event.edit("Succesfully Joined")
+                await event.edit("CHALO VAII AAGYE TUMHARI BARAT NIKALNE BACHE LOG TYAAR HO JAAO")
             except Exception as e:
                 await event.edit(str(e))
         else:
             await e.reply(usage, parse_mode=None, link_preview=None)
+
+
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.mraid"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.mraid"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.mraid"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.mraid"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.mraid"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\.mraid"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\.mraid"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.mraid"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\.mraid"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.mraid"))
 
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
@@ -384,7 +396,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await event.client(LeaveChannelRequest(bc))
-                await event.edit("Succesfully Left")
+                await event.edit("CHALO BHAIII SHUGRAAT KE LIYE V JAANA MEKO BYE BYE")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -556,7 +568,7 @@ async def spam(e):
 @adk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @bdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @cdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\..raid"))
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
@@ -624,7 +636,7 @@ async def _(event):
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.eplyraid"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 @sdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 @adk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 @bdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
@@ -647,7 +659,7 @@ async def _(e):
             qeue = que.get(g)
             appendable = [g]
             qeue.append(appendable)
-            text = "Activated Reply Raid"
+            text = "AAJA MUNNA AAAJA MMERE SE LADDD BSDKKK"
             await e.reply(text, parse_mode=None, link_preview=None)
         elif e.reply_to_msg_id:
             a = await e.get_reply_message()
@@ -657,7 +669,7 @@ async def _(e):
             qeue = que.get(g)
             appendable = [g]
             qeue.append(appendable)
-            text = "Activated Reply Raid"
+            text = "𝔸𝔹 𝔹𝕆𝕃 𝔹𝕊𝔻𝕂 𝕂𝔼 KALAP GYA MUNNA"
             await e.reply(text, parse_mode=None, link_preview=None)
         else:
             await e.reply(usage, parse_mode=None, link_preview=None)
@@ -701,7 +713,7 @@ async def _(e):
                 queue.pop(0)
             except Exception:
                 pass
-            text = "De-Activated Reply Raid"
+            text = "JJAA CHORR DIYA KRISHNA PAPA NE TEKO MOJ KAR MUNNA"
             await e.reply(text, parse_mode=None, link_preview=None)
         else:
             await e.reply(usage, parse_mode=None, link_preview=None)
@@ -724,7 +736,7 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None)
         end = datetime.now()
         ms = (end - start).microseconds / 1000
-        await event.edit(f"🤖 𝗣𝗼𝗻𝗴!\n`{ms}` 𝗺𝘀\n 𝗦𝗣𝗔𝗠𝗕𝗢𝗧 𝗢𝗡 𝗙𝗜𝗥𝗘 🔥")
+        await event.edit(f"🥳NYHNA🥳.!\n`{ms}` ms\n AA RAHE TERE JIJA JI SALE SHAB TERI BHEN SE RISHTA PAKKA😂❤️")
 
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
@@ -739,7 +751,7 @@ async def ping(e):
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 async def restart(e):
     if e.sender_id in SMEX_USERS:
-        text = "𝙍𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙\n\nPlease wait till it reboots..."
+        text = "🆁🅴🆂🆃🅰️🆁🆃🅴🅳n\n𝘈𝘈 𝘙𝘈𝘏𝘈 𝘔𝘌 𝘞𝘈𝘗𝘐𝘚 2 𝘔𝘐𝘕 𝘔𝘌 𝘚𝘈𝘉𝘈𝘙 𝘒𝘈𝘙 𝘈𝘜𝘙 𝘏𝘈𝘈 𝘉𝘏𝘜𝘓 𝘔𝘈𝘛 𝘔𝘌  𝘋𝘈𝘋 𝘖𝘍 𝘔𝘠 𝘉𝘖𝘚𝘚 𝘏𝘈𝘛𝘌𝘙𝘚😎😎"
         await e.reply(text, parse_mode=None, link_preview=None)
         try:
             await idk.disconnect()
@@ -797,13 +809,116 @@ async def restart(e):
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 async def help(e):
     if e.sender_id in SMEX_USERS:
-        text = "𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀\n\n𝙐𝙩𝙞𝙡𝙨 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.ping\n.restart\n\n𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.bio\n.join\n.pjoin\n.leave\n\n𝙎𝙥𝙖𝙢 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.spam\n.delayspam\n.bigspam\n.raid\n.replyraid\n.dreplyraid\n\n\nFor more help regarding usage of plugins type plugins name"
+        text = "[  ]\n\n𝐒𝐓𝐀𝐑𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.ping\n.restart\n\n𝐉𝐎𝐈𝐍 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.join\n.pjoin\n.leave\n\n𝐒𝐏𝐀𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.spam\n.delayspam\n.raid\n.bigspam\n.replyraid\n.dreplyraid\n\n𝐒𝐂𝐑𝐀𝐏 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.scrap\n\n𝐅𝐎𝐑 𝐍𝐄𝐄𝐃 𝐀𝐍𝐘 𝐇𝐄𝐋𝐏 𝐀𝐁𝐎𝐔𝐓 𝐒𝐏𝐀𝐌𝐁𝐎𝐓 𝐉𝐎𝐈𝐍 @NYHNA_SUPPORT "
         await e.reply(text, parse_mode=None, link_preview=None)
 
 
 # --------------------------------------------------------------------------------------------------------------------------------
 
 
+
+# --------------------------------------------------------------------------------------------------------------------------------
+
+
+from telethon.errors import (
+    ChannelInvalidError,
+    ChannelPrivateError,
+    ChannelPublicGroupNaError,
+)
+from telethon.tl import functions
+from telethon.tl.functions.channels import GetFullChannelRequest
+from telethon.tl.functions.messages import GetFullChatRequest
+
+async def get_chatinfo(event):
+    chat = chat = event.text[10:]
+    chat_info = None
+    if chat:
+        try:
+            chat = int(chat)
+        except ValueError:
+            pass
+    if not chat:
+        if event.reply_to_msg_id:
+            replied_msg = await event.get_reply_message()
+            if replied_msg.fwd_from and replied_msg.fwd_from.channel_id is not None:
+                chat = replied_msg.fwd_from.channel_id
+        else:
+            chat = event.chat_id
+    try:
+        chat_info = await event.client(GetFullChatRequest(chat))
+    except:
+        try:
+            chat_info = await event.client(GetFullChannelRequest(chat))
+        except ChannelInvalidError:
+            await event.reply("Invalid channel/group")
+            return None
+        except ChannelPrivateError:
+            await event.reply(
+                "This is a private channel/group or I am banned from there"
+            )
+            return None
+        except ChannelPublicGroupNaError:
+            await event.reply("Channel or supergroup doesn't exist")
+            return None
+        except (TypeError, ValueError):
+            await event.reply("Invalid channel/group")
+            return None
+    return chat_info
+
+
+def user_full_name(user):
+    names = [user.first_name, user.last_name]
+    names = [i for i in list(names) if i]
+    full_name = " ".join(names)
+    return full_name
+
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+async def get_users(event):
+    sender = await event.get_sender()
+    me = await event.client.get_me()
+    if not sender.id == me.id:
+        shivam = await event.reply("processing...")
+    else:
+        shivam = await event.reply("processing...")
+    alcoholic = await get_chatinfo(event)
+    chat = await event.get_chat()
+    if event.is_private:
+        return await shivam.edit("Sorry, Cant add users here")
+    s = 0
+    f = 0
+    error = "None"
+
+    await shivam.edit("TerminalStatus\n\nCollecting Users.......")
+    async for user in event.client.iter_participants(alcoholic.full_chat.id):
+        try:
+            if error.startswith("Too"):
+                return await shivam.edit(
+                    f"Terminal Finished With Error\n(May Got Limit Error from telethon Please try agin Later)\nError : \n{error}\n\n• Invited {s} people \n• Failed to Invite {f} people"
+                )
+            await event.client(
+                functions.channels.InviteToChannelRequest(channel=chat, users=[user.id])
+            )
+            s = s + 1
+            await shivam.edit(
+                f"Terminal Running...\n\n• Invited {s} people \n• Failed to Invite {f} people\n\n× LastError: {error}"
+            )
+        except Exception as e:
+            error = str(e)
+            f = f + 1
+    return await shivam.edit(
+        f"Terminal Finished \n\n• Successfully Invited {s} people \n• failed to invite {f} people #Shadow_On_Fire"
+    )
+#################
+    
 from telethon.errors import (
     ChannelInvalidError,
     ChannelPrivateError,
@@ -888,7 +1003,7 @@ async def get_users(event):
     f = 0
     error = "None"
 
-    await hell.edit("**INVITING USERS !!**")
+    await hell.edit("**Inviting Users....")
     async for user in event.client.iter_participants(kraken.full_chat.id):
         try:
             if error.startswith("Too"):
@@ -910,14 +1025,12 @@ async def get_users(event):
     )
 
 
-
-
 text = """ """
 
 print(text)
 print("")
 print(
-    "CONGRATULATIONS 🥳🥳..UR Spam Bots Ready to use"
+    "🅹🅰️🅰️ 🅼🆄🅽🅽🅰️ 🅼🅾️🅹 🅺🅰️🆁 🅱️🅰️🅽 🅶🆈🅰️ 🆃🅴🆁🅰️ 🅺🆁🅸🆂🅷🅽🅰️ 🆂🅿️🅰️🅼 🅱️🅾️🆃 🅰️🅱️ 🅶🅰️🅽🅳 🅵🅰️🅰️🅳 🆂🅰️🅱️🅺🅸 🅰️🆄🆁 🅷🅰️🅰️ @NYHNA_SUPPORT 🅸🆂🅺🅾️ 🅹🅾️🅸🅽 🅺🅰️🆁 🆆🅰️🆁🅽🅰️"
 )
 if len(sys.argv) not in (1, 3, 4):
     try:
