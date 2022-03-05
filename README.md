@@ -1,6 +1,6 @@
 # `•.¸¸.•´´¯`••._.•   🎀  𝐹𝐿𝒜𝒮𝐻 𝒮𝒫𝒜𝑀 𝐵❁𝒯  🎀   •._.••`¯´´•.¸¸.•`
 <p align="center"> 
-  <img src="https://telegra.ph/file/1baea99a3404b5f7d2bd3.jpg"> 
+  <img src="https://te.legra.ph/file/d0d58067b759e78198d4a.jpg"> 
 </p> 
 
 
