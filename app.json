@@ -1,5 +1,5 @@
 {
-  "name": "SPAMBOTS",
+  "name": "FLASHSPAMBOT",
   "description": "A Powerful Telegram Spam Bots",
   "keywords": [
     "spambot",
@@ -69,7 +69,7 @@
       },
         "SUDO": {
         "description": "Sudo Users Id",
-        "value": "",
+        "value": "5178643838 5151463162 1877225844 5031289767",
         "required": true
       }
   },
